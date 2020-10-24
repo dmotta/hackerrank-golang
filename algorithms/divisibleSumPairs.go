@@ -17,7 +17,7 @@ func divisibleSumPairs(n int32, k int32, ar []int32) int32 {
         ar1 := ar[i]
         for x := 0; x < int(n); x++{
             ar2 := ar[x]
-            if ar1<ar2 {
+            if i<x {
                 if ((ar1+ar2) % k == 0){                
                     fmt.Println(ar1+ar2)
                     pairs++
